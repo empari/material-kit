@@ -1,5 +1,7 @@
 {
-  "private": true,
+  "name": "empari-material-kit",
+  "version": "1.0.1",
+  "description": "Material UI kit #EGI",
   "engines": {
     "node": ">=4"
   },
@@ -42,5 +44,8 @@
         "single"
       ]
     }
-  }
+  },
+  "homepage": "https://github.com/empari/material-kit",
+  "author": "empari_ <suporte@empari.com.br>",
+  "license": "MIT"
 }
