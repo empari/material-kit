@@ -286,6 +286,7 @@
     .open > &.dropdown-toggle:focus,
     .open > &.dropdown-toggle:hover {
       background-color: $btn-color;
+      color: $white-color;
     }
 
     &:focus,

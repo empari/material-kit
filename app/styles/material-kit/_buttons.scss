@@ -1,13 +1,13 @@
 .btn,
 .navbar .navbar-nav > li > a.btn{
-
+    border: none;
     border-radius: $border-radius-base;
     position: relative;
     padding: 12px 30px;
     margin: 10px 1px;
 
     font-size: $mdb-btn-font-size-base;
-    font-weight: 500;
+    font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 0;
 
@@ -21,23 +21,11 @@
 
     &,
     &.btn-default{
-        border: 2px solid $brand-primary;
-        @include btn-styles($transparent);
-        color: $brand-primary;
-
-      &-inverse{
-        border: 2px solid $white;
-        @include btn-styles($transparent);
-        color: $white;
-      }
-
+        @include btn-styles($gray-light);
     }
 
     &.btn-primary{
-      color: $white;
-      border: none;
       @include btn-styles($brand-primary);
-
     }
     &.btn-info{
       @include btn-styles($brand-info);
@@ -59,12 +47,11 @@
         &:focus,
         &:hover{
             background-color: $white-color;
-            color: $brand-primary;
-          border: none;
+            color: $gray-light;
         }
         &.btn-simple{
-            color: $brand-primary;
-            background: $white;
+            color: #FFFFFF;
+            background: transparent;
             box-shadow: none;
         }
     }
