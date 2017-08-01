@@ -23,7 +23,7 @@ $white-color: #FFFFFF !default;
 
 $gray-color:  #999999 !default;
 
-$brand-primary: $purple-900 !default;
+$brand-primary: $purple !default;
 $brand-success: $green !default;
 $brand-danger: $red !default;
 $brand-warning: $yellow !default;
@@ -45,7 +45,7 @@ $font-weight-bold:    500 !default;
 $font-weight-extra-bold: 700 !default;
 $font-weight-ultra-bold: 900 !default;
 
-$body-bg: #f1f1f1 !default;
+$body-bg: #cacaca !default;
 //---
 
 // import bs variables for sass, first declared wins.
@@ -159,8 +159,8 @@ $mdb-radio-color-off: $mdb-label-color-toggle-focus !default;
 $mdb-radio-color-on: $brand-primary !default;
 
 // Buttons:
-$mdb-btn-font-size-base: 14px !default;
-$mdb-btn-font-size-lg: 18px !default;
+$mdb-btn-font-size-base: 12px !default;
+$mdb-btn-font-size-lg: 14px !default;
 $mdb-btn-font-size-sm: 11px !default;
 $mdb-btn-font-size-xs: 10px !default;
 
