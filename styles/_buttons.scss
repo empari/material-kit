@@ -1,0 +1,10 @@
+@import "variables";
+
+.btn{
+
+  &-default{
+    background-color: transparent;
+    border-color: $brand-primary;
+  }
+
+}
