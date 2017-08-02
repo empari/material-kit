@@ -1,6 +1,6 @@
 {
   "name": "empari-material-kit",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Material UI kit #EGI",
   "engines": {
     "node": ">=4"
