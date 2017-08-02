@@ -286,7 +286,6 @@
     .open > &.dropdown-toggle:focus,
     .open > &.dropdown-toggle:hover {
       background-color: $btn-color;
-      color: $white-color;
     }
 
     &:focus,
@@ -296,19 +295,6 @@
       @include button-shadow-color($btn-color);
     }
 
-  &.disabled,
-  &:disabled,
-  &[disabled],
-  fieldset[disabled] & {
-    &,
-    &:hover,
-    &:focus,
-    &.focus,
-    &:active,
-    &.active {
-        box-shadow: none;
-    }
-  }
 
   &.btn-simple{
       background-color: transparent;

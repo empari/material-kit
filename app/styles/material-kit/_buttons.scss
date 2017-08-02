@@ -1,59 +1,142 @@
 .btn,
 .navbar .navbar-nav > li > a.btn{
-    border: none;
+
     border-radius: $border-radius-base;
     position: relative;
-    padding: 12px 30px;
+    padding: 12px 35px;
     margin: 10px 1px;
 
     font-size: $mdb-btn-font-size-base;
-    font-weight: 400;
+    font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0;
-
     will-change: box-shadow, transform;
     transition: box-shadow 0.2s $mdb-animation-curve-fast-out-linear-in,
     background-color 0.2s $mdb-animation-curve-default;
 
     &::-moz-focus-inner {
-    border: 0;
+      border: 0;
     }
 
     &,
     &.btn-default{
-        @include btn-styles($gray-light);
+      border: 2px solid $brand-primary;
+      @include btn-styles($transparent);
+      color: $brand-primary;
+
+      &-inverse{
+        border: 2px solid $white;
+        @include btn-styles($transparent);
+        color: $white;
+
+        &.disabled,
+        &:disabled,
+        &[disabled],
+        fieldset[disabled] & {
+          border-color: $disabled-color-inverse !important;
+          color: $disabled-color-inverse  ;
+          &,
+          &:hover,
+          &:focus,
+          &.focus,
+          &:active,
+          &.active {
+            border-color: $disabled-color-inverse ;
+            box-shadow: none;
+          }
+        }
+
+      }
+
+      &.disabled,
+      &:disabled,
+      &[disabled],
+      fieldset[disabled] & {
+        border-color: $disabled-color !important;
+        color: $disabled-color;
+        &,
+        &:hover,
+        &:focus,
+        &.focus,
+        &:active,
+        &.active {
+          border-color: $disabled-color !important;
+          box-shadow: none;
+        }
+      }
+
     }
 
     &.btn-primary{
+      color: $white;
+      border: none;
       @include btn-styles($brand-primary);
+
+
+      &.disabled,
+      &:disabled,
+      &[disabled],
+      fieldset[disabled] & {
+        background-color: $disabled-color !important;
+        &,
+        &:hover,
+        &:focus,
+        &.focus,
+        &:active,
+        &.active {
+          box-shadow: none;
+        }
+      }
     }
     &.btn-info{
+      border: none;
       @include btn-styles($brand-info);
     }
     &.btn-success{
+      border: none;
       @include btn-styles($brand-success);
     }
     &.btn-warning{
+      border: none;
       @include btn-styles($brand-warning);
     }
     &.btn-danger{
+      border: none;
       @include btn-styles($brand-danger);
     }
     &.btn-upgrade{
+      border: none;
       @include btn-styles($brand-rose);
     }
     &.btn-white{
+      border: none;
         &,
         &:focus,
         &:hover{
             background-color: $white-color;
-            color: $gray-light;
+            color: $brand-primary;
         }
         &.btn-simple{
-            color: #FFFFFF;
+            color: $brand-primary;
             background: transparent;
             box-shadow: none;
         }
+      &.disabled,
+      &:disabled,
+      &[disabled],
+      fieldset[disabled] & {
+        color: $white !important;
+        background-color: $disabled-color !important;
+        &,
+        &:hover,
+        &:focus,
+        &.focus,
+        &:active,
+        &.active {
+          box-shadow: none;
+        }
+      }
+
     }
 
     &:focus,
