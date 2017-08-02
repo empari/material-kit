@@ -31,6 +31,7 @@
     // margin-bottom must be specified to give help-block vertical space.
     //    $see also form-group padding-bottom (and size variants) re: collapsible margins.  These work together.
     margin-bottom: $vertical-padding;
+
   }
 
   // generic labels used anywhere in the form (not control-label)
@@ -51,6 +52,7 @@
     font-weight: 400;
     margin: 16px 0 0 0; // std and lg
   }
+
 
   .help-block {
     margin-top: 0; // allow the input margin to set-off the top of the help-block
@@ -148,7 +150,7 @@
   @include material-placeholder {
     color: $mdb-input-placeholder-color;
     font-weight: 400;
-}
+  }
 
 
   //&:textarea {    // appears to be an invalid selector
@@ -166,6 +168,7 @@
     background-image: none;
     border-bottom: 1px dotted $mdb-input-underline-color;
   }
+
 }
 
 // -----
@@ -366,4 +369,30 @@ select.form-control {
         color: $red;
         opacity: 1;
     }
+}
+
+
+form{
+  &.inverse{
+    .form-control{
+      color: $white;
+      background-image: linear-gradient($mdb-input-underline-color-inverse, $mdb-input-underline-color-inverse),
+      linear-gradient($mdb-input-underline-color-inverse, $mdb-input-underline-color-inverse);
+    }
+    .control-label {
+      color:$mdb-input-placeholder-color-inverse;
+    }
+    .is-focused:not(.has-error){
+      .form-control{
+        background-image: linear-gradient($mdb-input-underline-color-inverse-is-focused, $mdb-input-underline-color-inverse-is-focused),
+        linear-gradient($mdb-input-underline-color-inverse-is-focused, $mdb-input-underline-color-inverse-is-focused);
+      }
+      .control-label {
+        color:$mdb-input-placeholder-color-inverse-is-focused;
+      }
+    }
+    .help-block{
+      color:$mdb-input-placeholder-color-inverse;
+    }
+  }
 }
