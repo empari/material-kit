@@ -14,13 +14,32 @@
 
         <div class="collapse navbar-collapse navbar-right" id="menutop">
           <ul class="nav navbar-nav">
-            <li><a href="#">Dashboard <i class="material-icons">arrow_forward</i></a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tags <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                  <li><a href="#buttons-row">Buttons</a></li>
+                  <li><a href="#checkbox-row">Checkbox/Radio/Toggle</a></li>
+                  <li><a href="#dropdown-row">Dropdown</a></li>
+                  <li><a href="#inputs-row">Inputs</a></li>
+                  <li><a href="#textarea-row">Textarea</a></li>
+                  <li><a href="#navbar-row">Navigation</a></li>
+                  <li><a href="#pagination-row">Pagination</a></li>
+                  <li><a href="#progressbar-row">Progress Bars</a></li>
+                  <li><a href="#labels-row">Labels</a></li>
+                  <li><a href="#tables-row">Tables</a></li>
+                  <li><a href="#datepicker-row">Datepicker</a></li>
+                  <li><a href="#modal-row">Modals</a></li>
+                  <li><a href="#tooltip-row">Tooltips/Popovers</a></li>
+                  <li><a href="#icons-row">Material Icons</a></li>
+                  <li><a href="#notification-row">Notifications</a></li>
+              </ul>
+            </li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <div class="header header-filter" style="background-image: url('http://www.empari.com.br/wp-content/themes/Empari_1.0/images/ban_empari_maringa.jpg')">
+    <div class="header header-fi1ter" style="background-image: url('http://www.empari.com.br/wp-content/themes/Empari_1.0/images/ban_empari_maringa.jpg')">
       <div class="container">
         <div class="row">
           <div class="col-md-8 col-md-offset-2">
@@ -1643,7 +1662,6 @@ export default {
   .main{
     background: #FFFFFF;
     position: relative;
-    z-index: 2;
 
   }
 
@@ -1737,13 +1755,7 @@ export default {
     .section-basic{
       padding-top: 15px;
     }
-    .header-filter:after{
-      background: rgba(101, 47, 142, 0.64);
-      background: linear-gradient(45deg,  rgba(101, 47, 142, 0.88) 0%, rgba(125, 46, 185, 0.45) 100%);
-      background: -moz-linear-gradient(135deg,  rgba(101, 47, 142, 0.88) 0%, rgba(125, 46, 185, 0.45) 100%);
-      background: -webkit-linear-gradient(135deg,  rgba(101, 47, 142, 0.88) 0%, rgba(125, 46, 185, 0.45) 100%);
 
-    }
   }
 
   // style for the landing page
