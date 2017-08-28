@@ -1,0 +1,28 @@
+@import "empari-material-kit";
+
+.sweet-alert {
+
+  h2{
+    color: $brand-primary;
+  }
+
+  button {
+    background-color: transparent !important;
+    &.confirm {
+      color: $brand-primary;
+      border: 2px solid $brand-primary;
+      //color: #3c80f6;
+      &:hover{
+        background-color: $brand-primary !important;
+        color: white;
+      }
+    }
+    &.cancel{
+      color: lighten($gray-darker, 50);
+      &:hover{
+        color: lighten($gray-darker, 10);
+      }
+    }
+  }
+
+}
